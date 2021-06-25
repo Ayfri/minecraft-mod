@@ -6,3 +6,10 @@ import net.minecraft.util.Identifier
 fun customID(name: String) = Identifier(mod_id, name)
 
 fun getFullID(id: String) = "$mod_id:$id"
+
+interface IDOwner {
+	val id: String
+	val fullID: String
+	
+	fun register()
+}

@@ -1,16 +1,17 @@
 package fr.ayfri.mod.blocks
 
+import fr.ayfri.mod.utils.IDOwner
 import fr.ayfri.mod.utils.getFullID
 import net.minecraft.item.BlockItem
 import net.minecraft.util.registry.Registry
 
-class BaseBlockItem(block: BaseBlock, settings: Settings) : BlockItem(block, settings) {
-	var id = block.id
+class BaseBlockItem(block: BaseBlock, settings: Settings) : BlockItem(block, settings), IDOwner {
+	override var id = block.id
 	
-	val fullID
+	override val fullID
 		get() = getFullID(id)
 	
-	fun register() {
+	override fun register() {
 		Registry.register(Registry.ITEM, fullID, this)
 		println("Added block item '$fullID' !")
 	}
