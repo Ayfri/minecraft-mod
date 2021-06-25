@@ -11,7 +11,7 @@ val BLOCK_ITEMS = mutableMapOf<String, BaseBlockItem>()
 
 fun initBlocks() {
 	val stoneMountainBlock = object : BaseBlock("stone_mountain", Material.STONE) {
-		override fun getSoundGroup(state: BlockState?) = BlockSoundGroup.DRIPSTONE_BLOCK
+		override fun getSoundGroup(state: BlockState?) = BlockSoundGroup.DEEPSLATE_TILES
 	}
 	
 	addBlock(stoneMountainBlock)
@@ -20,7 +20,7 @@ fun initBlocks() {
 	register()
 }
 
-fun addBlockItem(block: BaseBlock, settings: Item.Settings= Item.Settings()) = BLOCK_ITEMS.put(block.id, BaseBlockItem(block, settings))
+fun addBlockItem(block: BaseBlock, settings: Item.Settings = Item.Settings()) = BLOCK_ITEMS.put(block.id, BaseBlockItem(block, settings))
 
 fun addBlock(block: BaseBlock) = BLOCKS.put(block.id, block)
 

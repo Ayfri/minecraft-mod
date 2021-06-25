@@ -5,11 +5,8 @@ import net.minecraft.item.BlockItem
 import net.minecraft.util.registry.Registry
 
 class BaseBlockItem(block: BaseBlock, settings: Settings) : BlockItem(block, settings) {
-	var id: String
+	var id = block.id
 	
-	init {
-		id = block.id;
-	}
 	val fullID
 		get() = getFullID(id)
 	
