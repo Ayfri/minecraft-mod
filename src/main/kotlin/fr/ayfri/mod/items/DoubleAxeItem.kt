@@ -10,8 +10,7 @@ import net.minecraft.tag.BlockTags
 import net.minecraft.util.registry.Registry
 
 
-class DoubleAxeSettings(var attackDamage: Float = 1f, var attackSpeed: Float = 1f) : Item.Settings() {
-}
+class DoubleAxeSettings(var attackDamage: Float = 1f, var attackSpeed: Float = 1f) : Item.Settings()
 
 open class DoubleAxeItem(override val id: String, material: ToolMaterial, settings: DoubleAxeSettings) :
 	MiningToolItem(settings.attackDamage, settings.attackSpeed, material, BlockTags.AXE_MINEABLE, settings), IItem {

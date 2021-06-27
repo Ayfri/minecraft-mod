@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"iii",
+		"i/i",
+		" / "
+	],
+	"key": {
+		"i": {
+			"item": "minecraft:diamond"
+		},
+		"/": {
+			"item": "minecraft:stick"
+		}
+	},
+	"result": {
+		"item": "aymod:diamond_double_axe",
+		"count": 1
+	}
+}

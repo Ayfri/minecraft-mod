@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"iii",
+		"i/i",
+		" / "
+	],
+	"key": {
+		"i": {
+			"tag": "minecraft:planks"
+		},
+		"/": {
+			"item": "minecraft:stick"
+		}
+	},
+	"result": {
+		"item": "aymod:wooden_double_axe",
+		"count": 1
+	}
+}

@@ -1,11 +1,12 @@
 {
 	"required": true,
-	"package": "fr.ayfri.mod.mixin",
+	"package": "fr.ayfri.mod.mixins",
 	"compatibilityLevel": "JAVA_8",
 	"mixins": [
+		"EnchantmentMixin"
 	],
-	"client": [
-	],
+	"client": [],
+	"server": [],
 	"injectors": {
 		"defaultRequire": 1
 	}
