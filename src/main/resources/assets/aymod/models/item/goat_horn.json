@@ -1,0 +1,77 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "aymod:item/goat_horn"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [
+				0,
+				-2,
+				0
+			]
+		},
+		"ground": {
+			"rotation": [
+				90,
+				0,
+				0
+			]
+		},
+		"gui": {
+			"rotation": [
+				-67.5,
+				0,
+				45
+			],
+			"scale": [
+				1.5,
+				1.5,
+				1.5
+			]
+		},
+		"head": {
+			"rotation": [
+				90,
+				0,
+				0
+			],
+			"translation": [
+				0,
+				0,
+				-16
+			],
+			"scale": [
+				1.6,
+				1.6,
+				1.6
+			]
+		},
+		"fixed": {
+			"translation": [
+				0,
+				0,
+				-1.5
+			],
+			"scale": [
+				1.5,
+				1.5,
+				1.5
+			]
+		}
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"using": 0
+			},
+			"model": "aymod:item/goat_horn"
+		},
+		{
+			"predicate": {
+				"using": 1
+			},
+			"model": "aymod:item/goat_horn_in_hand"
+		}
+	]
+}

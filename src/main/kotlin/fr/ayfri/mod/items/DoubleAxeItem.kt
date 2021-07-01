@@ -23,6 +23,6 @@ open class DoubleAxeItem(override val id: String, material: ToolMaterial, settin
 	
 	override fun register() {
 		Registry.register(Registry.ITEM, fullID, this)
-		println("Added item $fullID !")
+		println("Added item '$fullID' !")
 	}
 }

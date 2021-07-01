@@ -12,7 +12,7 @@ open class BaseItem(override val id: String, settings: Settings) : Item(settings
 		get() = getFullID(id)
 	
 	override fun register() {
-		Registry.register(Registry.ITEM,  fullID, this)
-		println("Added item $fullID !")
+		Registry.register(Registry.ITEM, fullID, this)
+		println("Added item '$fullID' !")
 	}
 }

@@ -1,0 +1,6 @@
+{
+	"parent": "aymod:item/goat_horn",
+	"textures": {
+		"layer0": "aymod:item/goat_horn"
+	}
+}

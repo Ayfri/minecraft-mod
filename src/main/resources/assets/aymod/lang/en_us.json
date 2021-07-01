@@ -1,6 +1,5 @@
 {
 	"block.aymod.stone_mountain": "Stone Mountain",
-
 	"item.aymod.stone_mountain": "Stone Mountain",
 
 	"item.aymod.diamond_double_axe": "Diamond Double Axe",
@@ -8,5 +7,7 @@
 	"item.aymod.iron_double_axe": "Iron Double Axe",
 	"item.aymod.netherite_double_axe": "Netherite Double Axe",
 	"item.aymod.stone_double_axe": "Stone Double Axe",
-	"item.aymod.wooden_double_axe": "Wooden Double Axe"
+	"item.aymod.wooden_double_axe": "Wooden Double Axe",
+
+	"item.aymod.goat_horn": "Goat Horn"
 }

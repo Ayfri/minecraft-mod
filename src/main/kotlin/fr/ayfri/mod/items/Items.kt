@@ -1,23 +1,19 @@
 package fr.ayfri.mod.items
 
 import net.minecraft.item.ItemGroup
-import net.minecraft.item.ItemStack
 import net.minecraft.item.ToolMaterials
+
 
 val ITEMS = mutableMapOf<String, IItem>()
 
 fun initItems() {
-	addItem(object : DoubleAxeItem("netherite_double_axe", ToolMaterials.NETHERITE, DoubleAxeSettings().apply {
+	addItem(DoubleAxeItem("netherite_double_axe", ToolMaterials.NETHERITE, DoubleAxeSettings().apply {
 		attackDamage = 7f
 		attackSpeed = -3.1f
 		maxDamage(2500)
 		group(ItemGroup.TOOLS)
 		fireproof()
-	}) {
-		override fun isEnchantable(stack: ItemStack?): Boolean {
-			return super.isEnchantable(stack)
-		}
-	})
+	}))
 	addItem(DoubleAxeItem("diamond_double_axe", ToolMaterials.DIAMOND, DoubleAxeSettings().apply {
 		attackDamage = 7.5f
 		attackSpeed = -3.1f
@@ -48,6 +44,8 @@ fun initItems() {
 		maxDamage(75)
 		group(ItemGroup.TOOLS)
 	}))
+	
+	addItem(GoatHornItem)
 	
 	register()
 }
