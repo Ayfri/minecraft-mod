@@ -13,10 +13,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"client": [
-			"fr.ayfri.mod.client.AyfriClient"
+			"AyModClient"
 		],
 		"main": [
-			"fr.ayfri.mod.Ayfri"
+			"AyMod"
 		]
 	},
 	"mixins": [

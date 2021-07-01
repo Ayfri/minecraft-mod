@@ -5,6 +5,6 @@ import net.fabricmc.api.EnvType
 import net.fabricmc.api.Environment
 
 @Environment(EnvType.CLIENT)
-class AyfriClient : ClientModInitializer {
+class AyModClient : ClientModInitializer {
 	override fun onInitializeClient() = println("AyClient initialized")
 }
